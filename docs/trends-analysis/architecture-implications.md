@@ -31,33 +31,8 @@ Building on the CIWG 2.0 mandate and the trend analysis, three architectural evo
 pathways can be identified. These are **not mutually exclusive**. They operate at 
 different layers and timescales and are intended to complement each other.
 
-```mermaid
-graph LR
-  subgraph Current State
-    PKI[PKI + Soft Law\nImplicit Trust]
-  end
-  subgraph "Pathway A\nZero Trust"
-    A[Explicit Authorisation\nOAuth / Scoped Tokens]
-  end
-  subgraph "Pathway B\nVC / Attestation"
-    B[Verifiable Compliance\nEvidence]
-  end
-  subgraph "Pathway C\neIDAS / EUBW"
-    C[EU Trust Service\nAlignment]
-  end
-  subgraph Target
-    SEG[Network Segmentation\nas Governance Layer]
-  end
-
-  PKI --> A
-  PKI --> B
-  PKI --> C
-  A --> SEG
-  B --> SEG
-  C --> SEG
-```
-*Figure: Three parallel, complementary evolution pathways from the current state toward 
-the future trust architecture, with network segmentation as the spanning governance layer*
+![Figure 5: Three parallel, complementary evolution pathways from the current state toward the future trust architecture, with network segmentation as the spanning governance layer](../../assets/images/trends-analysis/fig5-evolution-pathways.png)
+*Figure 5: Three parallel, complementary evolution pathways from the current state toward the future trust architecture, with network segmentation as the spanning governance layer*
 
 ---
 

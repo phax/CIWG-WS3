@@ -28,18 +28,8 @@ the Peppol Service Provider Agreements define the obligations of service provide
 Peppol Authorities (PAs) are responsible for onboarding and oversight within their 
 jurisdictions. OpenPeppol sets the policy framework; enforcement is distributed.
 
-```mermaid
-graph LR
-  C1([Corner 1\nSender]) --> AP1[Corner 2\nAccess Point]
-  AP1 -->|AS4 / TLS + Peppol PKI| AP2[Corner 3\nAccess Point]
-  AP2 --> C4([Corner 4\nReceiver])
-  SML[(SML\nDIG DIGIT)] -. discovery .-> AP1
-  SMP[(SMP)] -. capability .-> AP1
-  PA[Peppol Authority] -. accreditation .-> AP1
-  PA -. accreditation .-> AP2
-  OP[OpenPeppol] -. policy .-> PA
-```
-*Figure: Four-corner model and governance structure*
+![Figure 1: Four-corner model and governance structure](../../assets/images/trends-analysis/fig1-four-corner-governance.png)
+*Figure 1: Four-corner model and governance structure*
 
 ### PKI-Based Trust for Transport
 
@@ -61,6 +51,9 @@ This model was a deliberate and appropriate design choice for a network in its g
 phase. It is now increasingly misaligned with sector-specific regulation, national 
 governance requirements, and modern Zero Trust security principles — and it makes 
 real-time security supervision structurally difficult.
+
+![Figure 2: The shift from liberal inner security (single flat trust domain) to segmented trust with layered accreditation and credential-based access control](../../assets/images/trends-analysis/fig2-liberal-inner-security.png)
+*Figure 2: The shift from liberal inner security (single flat trust domain) to segmented trust with layered accreditation and credential-based access control*
 
 ### Service Metadata Infrastructure
 

@@ -105,23 +105,8 @@ layer (analogous to the EU Trusted List of QTSPs), the VC is the portable proof 
 membership (analogous to a qualified certificate), and the authorisation token is the 
 runtime access mechanism.
 
-```mermaid
-graph TD
-  subgraph "Governance Layer (Layer 1)"
-    PA[Peppol Authority] -->|publishes| TL[PA Trusted List\nper segment]
-    TL --> LoTL[OpenPeppol\nList of Trusted Lists]
-  end
-  subgraph "Runtime Layer (Layer 2)"
-    VC[SP Wallet\nwith PA-issued VC] -->|presents credential| AS[Authorisation Server]
-    AS -->|issues scoped token| AP[Access Point]
-    AP -->|enforces segment policy| NW[Network Operations]
-  end
-  TL -.->|basis for| VC
-  LoTL -.->|authoritative anchor| AS
-```
-*Figure: The segmentation architecture — PA trusted lists feed the OpenPeppol list of 
-trusted lists, SPs hold credentials in wallets, the authorisation server issues scoped 
-tokens, and network operations enforce segment policy*
+![Figure 6: The segmentation architecture — PA trusted lists feed the OpenPeppol list of trusted lists, SPs hold credentials in wallets, the authorisation server issues scoped tokens, and network operations enforce segment policy](../../assets/images/trends-analysis/fig6-segmentation-architecture.png)
+*Figure 6: The segmentation architecture — PA trusted lists feed the OpenPeppol list of trusted lists, SPs hold credentials in wallets, the authorisation server issues scoped tokens, and network operations enforce segment policy*
 
 ---
 

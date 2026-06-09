@@ -11,28 +11,8 @@ Two structurally distinct regulatory trends are converging on the Peppol ecosyst
 They are not in conflict — indeed, they may ultimately reinforce each other — but they 
 operate through different mechanisms and create different demands on the trust architecture.
 
-```mermaid
-graph TD
-  subgraph "Trend 1: Mandatory Use"
-    ViDA[ViDA / e-Reporting]
-    BE[National mandates\ne.g. Belgium]
-  end
-  subgraph "Trend 2: Digital Trust Infrastructure"
-    eIDAS[eIDAS 2.0]
-    EUBW[European Business Wallet]
-    ERDS[ERDS / QERDS]
-  end
-  subgraph "Cross-cutting Compliance Layer"
-    NIS2[NIS2]
-    DORA[DORA]
-    GDPR[GDPR]
-  end
-  ViDA --> Peppol[Peppol Trust Architecture]
-  eIDAS --> Peppol
-  NIS2 --> SP[Service Providers]
-  Peppol --> SP
-```
-*Figure: Two converging regulatory trends and the cross-cutting compliance layer affecting Peppol service providers*
+![Figure 3: Two converging regulatory trends and the cross-cutting compliance layer affecting Peppol service providers](../../assets/images/trends-analysis/fig3-regulatory-trends.png)
+*Figure 3: Two converging regulatory trends and the cross-cutting compliance layer affecting Peppol service providers*
 
 ---
 
@@ -118,6 +98,9 @@ infrastructure it creates for attestation-based trust between business actors an
 providers.
 
 ### The European Business Wallet (EUBW) — The Business-Facing Extension
+
+![Figure 4: EUBW — a digital toolbox for trusted trade](../../assets/images/trends-analysis/fig4-eubw-digital-toolbox.jpg)
+*Figure 4: EUBW — a digital toolbox for trusted trade*
 
 The proposed EUBW regulation (COM(2025) 838 final, published November 2025) is the 
 business-facing complement to the citizen-facing EUDIW. It proposes a wallet infrastructure 

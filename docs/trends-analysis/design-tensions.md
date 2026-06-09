@@ -16,6 +16,8 @@ ensure they are resolved through deliberate architectural choice rather than lef
 
 ## Global reach vs. EU regulatory alignment
 
+![](../../assets/images/trends-analysis/tension-global-eu-alignment.png){: style="float:right; margin-left:1.5rem; width:120px"}
+
 eIDAS 2.0 and EUBW are EU-specific frameworks. Architectural choices that depend on EU 
 trust services or EU Digital Identity infrastructure will not be available to non-EU 
 service providers and participants. The architecture must have a clear story for how 
@@ -31,6 +33,8 @@ non-EU actors are accommodated.
 
 ## Centralised control vs. decentralised verification
 
+![](../../assets/images/trends-analysis/tension-centralised-decentralised.png){: style="float:right; margin-left:1.5rem; width:160px"}
+
 A wallet-based, holder-centric attestation model reduces operational burden on OpenPeppol 
 but requires relying parties to implement verification capabilities. The architecture must 
 balance operational simplicity for smaller SPs with the security benefits of decentralised 
@@ -40,6 +44,8 @@ verification.
 
 ## Ambition vs. backward compatibility
 
+![](../../assets/images/trends-analysis/tension-ambition-compatibility.png){: style="float:right; margin-left:1.5rem; width:130px"}
+
 More ambitious architectural options (Zero Trust token authorisation, wallet-native 
 credential presentation) may require significant changes to existing AP and SMP 
 implementations. The workstream must define an evolution path that does not impose 
@@ -48,6 +54,8 @@ breaking changes in the near term while keeping ambitious options open for the m
 ---
 
 ## Segmentation vs. interoperability
+
+![](../../assets/images/trends-analysis/tension-segmentation-interoperability.png){: style="float:right; margin-left:1.5rem; width:130px"}
 
 Network segmentation enables governable, differentiated trust at scale — but introduces 
 the risk of fragmentation if segments become siloed. The architecture must ensure that 
@@ -60,6 +68,9 @@ is legitimate, and that the segment model does not become a mechanism for market
 ---
 
 ## End-to-end encryption vs. format transformation capability
+
+![Figure: Agility vs. staleness — the structural trade-off between format transformation capability and end-to-end encryption](../../assets/images/trends-analysis/tension-e2ee-format-transformation.png)
+*The structural trade-off: format transformation agility (left) vs. encrypted content staleness (right)*
 
 This is the most structurally acute of the five tensions — and the one with the most 
 immediate policy implications.
