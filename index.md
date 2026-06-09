@@ -30,4 +30,4 @@ All contributions go through GitHub Pull Requests. See [CONTRIBUTING](CONTRIBUTI
 for editorial conventions, section status labels, and review expectations.
 
 Open questions and unresolved items are tracked as 
-[GitHub Issues](https://github.com/<org>/<repo>/issues).
+[GitHub Issues](https://github.com/emningno/ciwg-ws3/issues).
