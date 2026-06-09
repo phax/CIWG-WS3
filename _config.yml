@@ -61,6 +61,7 @@ mermaid:
 
 # --- Plugins (safe mode compatible) ---
 plugins:
+  - jekyll-remote-theme
   - jekyll-seo-tag
   - jekyll-sitemap
 
